@@ -1,41 +1,35 @@
 const photoContent = document.getElementById("photo-content");
-photoContent.addEventListener("mouseover", () =>{  
-   const bigFigures = document.getElementsByClassName("big-figure");
+const photo = document.getElementById("photo");
+const bigFigures = document.getElementsByClassName("big-figure");
+const smallFigures = document.getElementsByClassName("small-figure");
+const rightValues = [...smallFigures].map(e =>{
+     const style = getComputedStyle(e)
+     return style["right"]
+});
+photoContent.addEventListener("mouseover", () =>{
+     photo.style.width = "450px";
+     photo.style.height = "450px";
+     photo.style.transition = "ease-in .25s";
    for (const iterator of bigFigures) {
-        const style = getComputedStyle(iterator)
-        const width=style["width"].match(/\d+/)[0];
-        const height=style["height"].match(/\d+/)[0];
-        iterator.style.width = '710px';
-        iterator.style.height = '710px';
-        iterator.style.transition = "ease-in .4s";
+        iterator.style.right = '-1000px';
+        iterator.style.transition = "ease-in .25s";
    }
    const smallFigures = document.getElementsByClassName("small-figure");
    for (const iterator of smallFigures) {
-        const style = getComputedStyle(iterator)
-        const width=style["width"].match(/\d+/)[0];
-        const height=style["height"].match(/\d+/)[0];
-        iterator.style.width = '30px';
-        iterator.style.height = '30px';
-        iterator.style.transition = "ease-in .4s";
+        iterator.style.right = '-1000px';
+        iterator.style.transition = "ease-in .25s";
    }
 }, false);
 photoContent.addEventListener("mouseout", () =>{  
-    const bigFigures = document.getElementsByClassName("big-figure");
-    for (const iterator of bigFigures) {
-         const style = getComputedStyle(iterator)
-         const width=style["width"].match(/\d+/)[0];
-         const height=style["height"].match(/\d+/)[0];
-         iterator.style.width = '700px';
-         iterator.style.height = '700px';
-         iterator.style.transition = "ease-in .4s";
+     photo.style.width = "350px";
+     photo.style.height = "350px";
+     photo.style.transition = "ease-in .25s";
+    for (const iterator of bigFigures) {        
+         iterator.style.right = '-450px';
+         iterator.style.transition = "ease-in .25s";
     }
-    const smallFigures = document.getElementsByClassName("small-figure");
     for (const iterator of smallFigures) {
-         const style = getComputedStyle(iterator)
-         const width=style["width"].match(/\d+/)[0];
-         const height=style["height"].match(/\d+/)[0];
-         iterator.style.width = '20px';
-         iterator.style.height = '20px';
-         iterator.style.transition = "ease-in .4s";
+         iterator.style.right = rightValues[ [...smallFigures].indexOf(iterator)]
+         iterator.style.transition = "ease-in .25s";
     }
 }, false);
