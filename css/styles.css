@@ -83,11 +83,10 @@ body {
 }
 .info-section .info-content h1 {
     cursor: pointer;
-    font-size: 4em;
     font-weight: normal;
     margin-bottom: 50px;
 }
-.info-section .info-content h1:after {
+.h-divider:after {
     content: " ";
     display: block;
     width: 100px;
@@ -95,6 +94,14 @@ body {
     background: #bc90f4;
     border-radius: 10px;
     margin: 10px 0px;
+}
+.h1 {
+    font-size: 4em;
+    color: #fff;
+}
+.h2 {
+    font-size: 2em;
+    color: #fff;
 }
 .info-section .info-content h1:hover::after {
     width: 300px;
@@ -181,40 +188,152 @@ body {
     bottom: 200px;
     right: 360px;
 }
-.about{
+.about {
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr);
     width: 100vw;
     align-items: center;
     z-index: 2;
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
 }
-.about img{
+.about img {
     width: 100%;
+    height: 100%;
     grid-column: 1/6;
 }
-.about-info{
+.about-info {
     grid-column: 6/12;
     padding: 2em;
-}
-.about-info h2{
-    font-size: 2em;
-    color: #fff;
-}
-
-.about-info h2:after {
-    content: " ";
-    display: block;
-    width: 100px;
-    height: 10px;
-    background: #bc90f4;
-    border-radius: 10px;
-    margin: 10px 0px;
 }
 .about-info p {
     color: #fff;
     margin: 10px 0px;
+}
+.portfolio{
+    position: relative;
+}
+.portfolio .portfolio-headings {
+    width: 100vw;
+    padding: 3em;
+}
+.portfolio .portfolio-headings h2 {
+    font-size: 2.5em;
+}
+.portfolio .horizontal-parent {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.portfolio .horizontal-child { 
+    margin: 1rem 0px;
+    position: relative;
+    display: block;
+    width: 100vh;
+    height: 100vw;
+    overflow: scroll;
+    transform-origin: 100% 0%;
+    transform: rotate(-90deg) translateY(-100vh);
+}
+.portfolio .horizontal-child .slide {
+    padding: 3rem 0rem 1rem;
+    transform-origin: 0% 0%;
+    column-gap: 0;
+    transform: rotate(90deg) translateY(-100%);
+}
+.play-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: b77cff;
+    z-index: 5;
+}
+/*
+ *  STYLE 4
+ */
+
+#horizontal-child::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: transparent;
+}
+
+#horizontal-child::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: transparent;
+}
+
+#horizontal-child::-webkit-scrollbar-thumb
+{
+	background-color: #bc90f4;
+	border: 1px solid #7136ed;
+}
+
+
+.portfolio .container {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* margin: 0px 15px; */
+}
+.portfolio .container .card {
+    border-radius: 10px;
+    width: 300px;
+    height: max-content;
+    background-color: #bc90f4;
+    margin: 1em;
+}
+.portfolio .container .card .card-image {
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://media3.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif");
+}
+.portfolio .container .card .card-image .projects-links {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.portfolio .container .card .card-image .projects-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.portfolio .container .card .card-image .projects-links a i {
+    font-size: 1.5em;
+    background: #bc90f4;
+    border-radius: 50%;
+}
+.portfolio .container .card .card-title {
+    padding: 20px;
+}
+
+.portfolio .container .card .projects-details {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .container .card .projects-details button a {
+    text-decoration: none;
+    color: #fff;
 }
 @media only screen and (max-width: 912px) {
     .navbar {

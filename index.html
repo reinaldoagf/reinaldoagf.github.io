@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reinaldo González</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -33,7 +36,7 @@
         <main class="main">
             <div class="info-section">
                 <div class="info-content">
-                    <h1>
+                    <h1 class="h1 h-divider">
                         Reinaldo </br> González
                     </h1>
                     <h4>
@@ -57,11 +60,10 @@
         </main>
 
     </div>
-    <div class="about">
+    <div class="wrapper about">
         <img src="./img/about.jpg" alt="Reinaldo González">
         <div class="about-info">
-            <h2>Sobre mí</h2>
-            <div class="divider"></div>
+            <h2 class="h2 h-divider">Sobre mí</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam hic, impedit nisi voluptas voluptate
                 quasi illum reprehenderit eveniet quo ex et voluptatum cupiditate at praesentium necessitatibus
@@ -75,6 +77,255 @@
             <button class="download-cv">
                 Read more
             </button>
+        </div>
+    </div>
+    <div class="wrapper portfolio">
+        <div class="portfolio-headings">
+            <h2 class="h2 h-divider">Portfolio</h2>
+        </div>
+        <div class="horizontal-parent" id="horizontal-parent">
+            <button class="play-btn" onclick="toggleScroll()">
+                <i class="fa fa-play" id="icon-play-btn"></i>
+            </button>
+            <div class="horizontal-child" id="horizontal-child" >
+                <div class="slide">
+                    <div class="container">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="projects-links">
+                                    <a href="https://github.com/reinaldoagf/instaredux" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+
+                                <div class="projects-links">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h2>
+                                    Project description
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque impedit aspernatur,
+                                    placeat excepturi aliquid totam deleniti error rerum repellendus esse, laborum alias
+                                    sit sequi in voluptatibus eos assumenda repudiandae iste.</p>
+                            </div>
+                            <div class="projects-details">
+                                <button class="download-cv">
+                                    <a href="">
+
+                                        Detalles del proyecto
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
