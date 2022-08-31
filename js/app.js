@@ -1,11 +1,5 @@
-var item = document.getElementById("photo-content");
-item.addEventListener("mouseover", func, false);
-item.addEventListener("mouseout", func1, false);
-
-function func()
-{  // not needed since item is already global, 
-   // I am assuming this is here just because it's sample code?
-   // var item = document.getElementById("button"); 
+const photoContent = document.getElementById("photo-content");
+photoContent.addEventListener("mouseover", () =>{  
    const bigFigures = document.getElementsByClassName("big-figure");
    for (const iterator of bigFigures) {
         const style = getComputedStyle(iterator)
@@ -24,10 +18,8 @@ function func()
         iterator.style.height = '30px';
         iterator.style.transition = "ease-in .4s";
    }
-}
-
-function func1()
-{  
+}, false);
+photoContent.addEventListener("mouseout", () =>{  
     const bigFigures = document.getElementsByClassName("big-figure");
     for (const iterator of bigFigures) {
          const style = getComputedStyle(iterator)
@@ -46,4 +38,4 @@ function func1()
          iterator.style.height = '20px';
          iterator.style.transition = "ease-in .4s";
     }
-}
+}, false);

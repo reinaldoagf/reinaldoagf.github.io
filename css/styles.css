@@ -82,6 +82,7 @@ body {
     z-index: 1;
 }
 .info-section .info-content h1{
+    cursor: pointer;
     font-size: 4em;
     font-weight: normal;
     margin-bottom: 50px;
@@ -93,6 +94,10 @@ body {
     height: 10px;
     background: #BC90F4;
     border-radius: 10px;
+}
+.info-section .info-content h1:hover::after{    
+    width: 300px;
+    transition: ease-in .4s;
 }
 .info-section .info-content h4{
     font-size: 3em;
