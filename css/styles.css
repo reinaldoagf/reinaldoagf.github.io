@@ -74,10 +74,10 @@ header{
     border-radius: 50%;
 }
 .toggle-menu i{
-    text-align: center;
-    font-size: 1em;
-    width: 15px;
-    height: 15px;
+    text-align: center;    
+    font-size: 0.8em;
+    width: 10px;
+    height: 10px;
 }
 .toggle-menu #toggle-close{
     display: none;
@@ -618,7 +618,7 @@ header{
     }
     .portfolio .horizontal-parent .play-btn {
         top: 75px;
-        right: 60px;
+        right: 55px;
     }
     .contact .container img{
         display: none;
