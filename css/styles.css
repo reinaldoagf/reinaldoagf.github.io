@@ -373,6 +373,10 @@ body {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     outline: 4px solid #ffffff99;
+    cursor: pointer;
+}
+.contact .container img:hover {
+    opacity: 1;
 }
 
 .form-group {
