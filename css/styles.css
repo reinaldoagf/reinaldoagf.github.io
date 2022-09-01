@@ -14,6 +14,11 @@ body {
     width: 100%;
     height: 100%;
     color: #fff;
+    overflow: hidden;
+}
+header{    
+    z-index: 2;
+    position: relative;
 }
 .navbar {
     display: flex;
@@ -53,7 +58,22 @@ body {
 .menu .active {
     color: #b77cff;
 }
-
+.toggle-menu,
+.info-section .info-content .sotial-networks {
+    display: none;
+}
+.toggle-menu{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+.toggle-menu i{
+    text-align: center;
+    font-size: 1.6em;
+}
+.toggle-menu #toggle-close{
+    display: none;
+}
 .main {
     margin: 0 auto;
     display: grid;
@@ -99,7 +119,7 @@ body {
     margin: 10px 0px;
 }
 .h1 {
-    font-size: 4em;
+    font-size: 4em; 
     color: #fff;
 }
 .h2 {
@@ -214,7 +234,7 @@ body {
     grid-template-columns: repeat(10, 1fr);
     width: 100vw;
     align-items: center;
-    z-index: 2;
+    /* z-index: 2; */
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -256,7 +276,7 @@ body {
     display: block;
     width: 100vh;
     height: 100vw;
-    overflow: scroll;
+    overflow-y: scroll;
     transform-origin: 100% 0%;
     transform: rotate(-90deg) translateY(-100vh);
 }
@@ -463,7 +483,7 @@ body {
 }
 @media only screen and (max-width: 912px) {
     .navbar {
-        display: inline-block;
+        display: flex;
     }
     .menu {
         width: 100%;
@@ -471,5 +491,113 @@ body {
     .menu a {
         padding: 5px 10px;
         font-size: 10px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: rgba(67, 95, 150, 1);
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+    }
+    .menu li{
+        margin: 1em;
+    }
+    .show-menu{
+        transform:translateX(0); 
+    }
+    .toggle-menu{
+        display: block;
+    }
+    .info-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .info-section .info-content h1 {
+        margin-bottom: 20px;
+    }
+    .info-section .info-content h4{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .info-section .info-content .sotial-networks {
+        display: flex;
+    }
+    .big-figure{
+        width: 350px;
+        height: 350px;
+    }
+    .first-dot{
+        right: -260px;
+        top: -260px;
+    }
+    .second-dot {
+        right: 200px;
+        top: 50px;
+    }
+    .third-dot {
+        right: 20px;
+        top: 25px;
+    }
+    .fourth-dot {
+        top: -80px;
+        right: 80px;
+    }
+    .fifth-dot {
+        top: 500px;
+        right: 320px;
+    }
+    .six-dot {
+        top: 600px;
+        right: 10px;
+    }
+    .first-frame {
+        border: 2px solid #7136ed;
+        background: #7136ed;
+        top: -10px;
+        right: 300px;
+    }
+    .second-frame {
+        border: 2px solid #b77cff;
+        background: #b77cff;
+        bottom: 80px;
+        right: 260px;
+    }
+    .third-frame {
+        border: 2px solid #7136ed;
+        background: #7136ed;
+        bottom: 200px;
+        right: 360px;
+    }
+    .fourth-frame {
+        border: 2px solid #7136ed;
+        background: #7136ed;
+        bottom: 60px;
+        right: 660px;
+    }
+    .fifth-frame {
+        border: 2px solid #b77cff;
+        background: #b77cff;
+        top: 35px;
+        right: 760px;
+    }
+    .photo-content img {
+        width: 250px;
+        height: 250px;
+    }
+    .photo-content {
+        justify-content: center;
     }
 }
