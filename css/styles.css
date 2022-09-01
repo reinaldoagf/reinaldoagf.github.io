@@ -74,10 +74,10 @@ header{
     border-radius: 50%;
 }
 .toggle-menu i{
-    text-align: center;    
-    font-size: 0.8em;
-    width: 10px;
-    height: 10px;
+    text-align: center;
+    font-size: 1em;
+    width: 15px;
+    height: 15px;
 }
 .toggle-menu #toggle-close{
     display: none;
