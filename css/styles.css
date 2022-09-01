@@ -234,11 +234,11 @@ body {
 .portfolio{
     position: relative;
 }
-.portfolio .portfolio-headings {
+.portfolio .portfolio-headings, .contact .contact-headings  {
     width: 100vw;
     padding: 3em;
 }
-.portfolio .portfolio-headings h2 {
+.portfolio .portfolio-headings h2, .contact .contact-headings h2 {
     font-size: 2.5em;
 }
 .portfolio .horizontal-parent {
@@ -300,7 +300,7 @@ body {
 }
 
 
-.portfolio .container {
+.portfolio .container{
     width: 80vw;
     height: 80vh;
     margin: 0 auto;
@@ -308,7 +308,6 @@ body {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* margin: 0px 15px; */
 }
 .portfolio .container .card {
     border-radius: 10px;
@@ -356,6 +355,69 @@ body {
     text-decoration: none;
     color: #fff;
 }
+
+.contact .container {
+    padding: 0px 3em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact .container img {
+    width: 400px;
+    height: 400px;
+    bottom: 0px;
+    opacity: 0.2; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    outline: 4px solid #ffffff99;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+  }
+  .form-group textarea {
+    height: 150px;
+    padding: 1.5em;
+    background: none;
+    border-left: 1px solid #bc90f4;
+    border-right: 1px solid #bc90f4;
+    border-top: none;
+    color: #fff;
+    resize: none;
+  }
+  
+  .form-group .input {
+    padding: 10px 20px;
+    background: none;
+    border: none;    
+    color: #fff;
+  }
+  
+  .form-group #name {
+    border-top: 1px solid #bc90f4;
+    border-left: 1px solid #bc90f4;
+    border-right: 1px solid #bc90f4;
+    border-radius: 10px 10px 0px 0px;
+    }
+  .form-group #email {
+    border-left: 1px solid #bc90f4;
+    border-right: 1px solid #bc90f4;
+  }
+
+  .form-group .btn-submit {
+    padding: 10px 20px;
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #bc90f4;
+    color: #fff;
+    cursor: pointer;
+  }
 @media only screen and (max-width: 912px) {
     .navbar {
         display: inline-block;
