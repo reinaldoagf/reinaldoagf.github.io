@@ -75,9 +75,9 @@ header{
 }
 .toggle-menu i{
     text-align: center;
-    font-size: 1.6em;
-    width: 25px;
-    height: 25px;
+    font-size: 1em;
+    width: 15px;
+    height: 15px;
 }
 .toggle-menu #toggle-close{
     display: none;
@@ -617,8 +617,8 @@ header{
         margin: 0;
     }
     .portfolio .horizontal-parent .play-btn {
-        top: 85px;
-        right: 28px;
+        top: 75px;
+        right: 60px;
     }
     .contact .container img{
         display: none;
