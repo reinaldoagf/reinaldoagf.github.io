@@ -1,0 +1,12 @@
+let relaxFirstDot = new Rellax('.relax-first-dot')
+let relaxSecondDot = new Rellax('.relax-second-dot')
+let relaxThirdDot = new Rellax('.relax-third-dot')
+let relaxFourthDot = new Rellax('.relax-fourth-dot')
+let relaxFifthDot = new Rellax('.relax-fifth-dot')
+let relaxSixDot = new Rellax('.relax-six-dot')
+
+let relaxFirstFrame = new Rellax('.relax-first-frame')
+let relaxSecondFrame = new Rellax('.relax-second-frame')
+let relaxThirdFrame = new Rellax('.relax-third-frame')
+let relaxFourthFrame = new Rellax('.relax-fourth-frame')
+let relaxFifthFrame = new Rellax('.relax-fifth-frame')

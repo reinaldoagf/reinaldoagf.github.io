@@ -170,6 +170,12 @@ body {
     top: 600px;
     right: -50px;
 }
+.six-dot {
+    border: 2px solid #b77cff;
+    background: transparent;
+    top: 350px;
+    right: 550px;
+}
 .first-frame {
     border: 2px solid #7136ed;
     background: #7136ed;
@@ -187,6 +193,18 @@ body {
     background: #7136ed;
     bottom: 200px;
     right: 360px;
+}
+.fourth-frame{    
+    border: 2px solid #7136ed;
+    background: #7136ed;
+    bottom: 60px;
+    right: 660px;
+}
+.fifth-frame{    
+    border: 2px solid #b77cff;
+    background: #b77cff;
+    top: 35px;
+    right: 760px;
 }
 .about {
     display: grid;
