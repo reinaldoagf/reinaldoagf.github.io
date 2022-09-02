@@ -110,15 +110,15 @@ header{
 .footer .footer-content h2::before {
   background: #98BBFF; 
   animation: typewriter 6s
-    steps(19) 1s forwards;
+    steps(20) 1s forwards infinite;
 }
 
 .footer .footer-content h2::after {
-  width: 0.125em;
+  width: 0.180em;
   background: #fff;
   animation: typewriter 6s
-      steps(19) 1s forwards,
-    blink 750ms steps(19) infinite;
+      steps(20) 1s forwards infinite,
+    blink 750ms steps(20) infinite;
 }
 
 .download-cv {
