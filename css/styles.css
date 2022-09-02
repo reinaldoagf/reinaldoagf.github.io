@@ -295,13 +295,13 @@ header{
     position: relative;
     display: block;
     width: 100vh;
-    height: 100vw;
+    height: calc(100vw - 15px);
     overflow-y: scroll;
     transform-origin: 100% 0%;
     transform: rotate(-90deg) translateY(-100vh);
 }
 .portfolio .horizontal-child .slide {
-    padding: 3rem 0rem 1rem;
+    padding: 3rem 1rem 1rem;
     transform-origin: 0% 0%;
     column-gap: 0;
     transform: rotate(90deg) translateY(-100%);
@@ -491,6 +491,12 @@ header{
     color: #fff;
     font-size: 1.5em;
 }
+
+@media only screen and (max-width: 1874px) {    
+    .portfolio .horizontal-child {
+        height: calc(100vw - 2px);
+    }
+}
 @media only screen and (max-width: 912px) {
     .navbar {
         display: flex;
@@ -502,6 +508,7 @@ header{
         padding: 5px 10px;
         font-size: 10px;
     }
+    
 }
 @media only screen and (max-width: 800px) {
     .menu{
@@ -632,5 +639,8 @@ header{
     }
     .footer-content h5 {
         font-size: 100%;
+    }
+    .portfolio .horizontal-child {
+        height: calc(100vw - 0.5px);
     }
 }
