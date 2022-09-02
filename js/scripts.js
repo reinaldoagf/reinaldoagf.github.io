@@ -88,3 +88,8 @@ function toggleMenu(){
           toggleClose.style.display='none';
      }
 }
+function toggleVisibility(id){
+     const element = document.querySelector(id);
+     element.classList.toggle('hide-element');
+     element.classList.toggle('show-element');
+}

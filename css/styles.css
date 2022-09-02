@@ -290,6 +290,10 @@ header{
     color: #fff;
     margin: 10px 0px;
 }
+.about-info .hide-element {
+    display: none;
+    transition: all .5s ease-in-out;
+}
 .portfolio {
     position: relative;
 }
