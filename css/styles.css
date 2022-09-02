@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 * {
     margin: 0;
     padding: 0;
@@ -89,6 +90,37 @@ header{
     height: 80vh;
     position: relative;
 }
+.footer .footer-content h2 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: monospace;
+    position: relative;
+    width: max-content;
+  }
+.footer .footer-content h2::before,
+.footer .footer-content h2::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .footer-content h2::before {
+  background: #98BBFF; 
+  animation: typewriter 6s
+    steps(19) 1s forwards;
+}
+
+.footer .footer-content h2::after {
+  width: 0.125em;
+  background: #fff;
+  animation: typewriter 6s
+      steps(19) 1s forwards,
+    blink 750ms steps(19) infinite;
+}
+
 .download-cv {
     padding: 10px 20px;
     background-color: #b77cff;
@@ -491,7 +523,16 @@ header{
     color: #fff;
     font-size: 1.5em;
 }
-
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
 @media only screen and (max-width: 1874px) {    
     .portfolio .horizontal-child {
         height: calc(100vw - 2px);
