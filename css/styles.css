@@ -539,13 +539,7 @@ header{
     opacity: 1;
 }
 
-.contact .container .contact-form .form-group {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    margin-top: 2em;
-}
-.contact .container .contact-form .form-group textarea {
+.contact .container .contact-form .form-content textarea {
     height: 150px;
     padding: 1.5em;
     background: none;
@@ -556,25 +550,25 @@ header{
     resize: none;
 }
 
-.contact .container .contact-form .form-group .input {
+.contact .container .contact-form .form-content .input {
     padding: 10px 20px;
     background: none;
     border: none;
     color: #fff;
 }
 
-.contact .container .contact-form .form-group #fullname {
+.contact .container .contact-form .form-content #fullname {
     border-top: 1px solid #bc90f4;
     border-left: 1px solid #bc90f4;
     border-right: 1px solid #bc90f4;
     border-radius: 10px 10px 0px 0px;
 }
-.contact .container .contact-form .form-group #email {
+.contact .container .contact-form .form-content #email {
     border-left: 1px solid #bc90f4;
     border-right: 1px solid #bc90f4;
 }
 
-.contact .container .contact-form .form-group .btn-submit {
+.contact .container .contact-form .form-content .btn-submit {
     padding: 10px 20px;
     border-radius: 0px 0px 10px 10px;
     border: none;
@@ -583,7 +577,17 @@ header{
     color: #fff;
     cursor: pointer;
 }
-
+.contact .container .contact-form .form-content .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin: 2em 0px;
+}
+.contact .container .contact-form .form-content .recaptcha-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 
 .footer {
     display: flex;
@@ -779,7 +783,7 @@ header{
         display: none;
     }
     .contact .container .contact-form,
-    .contact .container .contact-form .form-group{
+    .contact .container .contact-form .form-content{
         width: 100%;
     }
     .footer-content h2 {
