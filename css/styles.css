@@ -532,7 +532,7 @@ header{
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    outline: 4px solid #ffffff99;
+    border: 4px solid #fff;
     cursor: pointer;
 }
 .contact .container img:hover {
@@ -563,7 +563,7 @@ header{
     color: #fff;
 }
 
-.contact .container .contact-form .form-group #name {
+.contact .container .contact-form .form-group #fullname {
     border-top: 1px solid #bc90f4;
     border-left: 1px solid #bc90f4;
     border-right: 1px solid #bc90f4;
