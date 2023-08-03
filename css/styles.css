@@ -63,6 +63,28 @@ header {
 .menu .active {
     color: #b77cff;
 }
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: #b77cff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    z-index: 1;
+    top: 60px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* .menu .submenu li {
+    padding: 10px;
+} */
+.menu .submenu-li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.menu .submenu-li:hover .submenu {
+    display: block;
+}
 .toggle-menu,
 .info-section .info-content .sotial-networks {
     display: none;
@@ -169,7 +191,7 @@ header {
     transition: ease-in 0.4s;
 }
 .info-section .info-content h4 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: normal;
     color: #98bbff;
 }
